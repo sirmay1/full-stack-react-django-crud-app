@@ -6,3 +6,6 @@ class PostSerializer(ModelSerializer):
         model = Post
         fields = ('id', 'title', 'body')
 
+
+
+

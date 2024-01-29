@@ -48,7 +48,10 @@ INSTALLED_APPS = [
 
 
 # Adding this feature allows Django to communicate with React.
-CORS_ALLOWED_ORIGINS = ['http://localhost:5173/']
+#ALLOWED_HOSTS = ['*']
+
+CORS_ALLOWED_ORIGINS = ['http://localhost:5173']
+#CORS_ALLOWED_ORIGINS = []
 
 
 
@@ -62,6 +65,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     # added middleware for project
+
     'corsheaders.middleware.CorsMiddleware',
 ]
 
